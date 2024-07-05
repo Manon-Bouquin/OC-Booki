@@ -1,0 +1,128 @@
+/****** General ***********/
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*************************************************Ma modif**********************************************************/
+header {
+    padding: 20px 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 189.85px;
+    height: 59.05px;
+    top: 134px;
+    left: 77.56px;
+    
+}
+
+.Liens {
+    margin-left: 30px;
+    padding-top: 20px;
+  
+}
+
+.Liens:hover {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.description h1{
+    margin-bottom: 2px;
+}
+
+.description p{
+    margin-top: 2px;
+}
+
+.buttonglass .fa-solid {
+    color: white;
+}
+
+
+label .fa-solid {
+    color: black;
+}
+
+.cta {
+    display: inline-block;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px 5px 30px 5px;
+}
+
+.cta:hover {
+    background-color: rgba(0, 101, 252, 0.1);
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav img {
+        margin-bottom: 20px;
+    }
+
+   nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+
+    .Liens:hover {
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+        color: #0065FC;
+    }
+    
+    .Liens {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    }
+
+}

@@ -1,0 +1,238 @@
+form p { 
+    display: flex;
+    margin-top: 30px;
+}
+
+form label i {
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+}
+
+.buttonrechercher {
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    border: 0px solid #0065FC;
+    padding: 10px;
+    color: white;
+}
+
+.buttonglass {
+    display: none;
+}
+
+.zone {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 0px;
+}
+
+.filtre {
+    display: flex;
+    font-weight: bold;
+}
+
+.filtre p {
+    margin-right: 20px;
+}
+
+.information {
+    display: flex;
+}
+
+.info {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 100px;
+    padding: 5px;
+    margin: 10px 10px 30px 0px;           /**Haut droite bas gauche**/
+    width: 20px;                  /**Les 3 lignes permettent de faire un rond parfait**/
+    height: 20px;
+    text-align: center;
+}
+ 
+/**********************************************************/
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 33px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+ .card-subtitle {
+    margin: 0;
+}
+
+.card-rating {
+    margin-bottom: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modiftaille {
+    width: 33%;
+    height: 136px;
+    margin: 0px;
+    border: 1px solid blue;
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+.hebergement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.hebergement-cards img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergement-cards.card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-cards .card {
+    display: flex;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+  
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .buttonglass {
+        display: flex;
+        background-color: #0065FC;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5) ;
+        
+    }
+    
+    .buttonglass {
+        position: relative;
+        right: 10px;
+    }
+
+    .buttonrechercher {
+        display: none;
+    }
+
+    .filtre {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
