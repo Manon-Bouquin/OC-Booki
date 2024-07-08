@@ -192,6 +192,10 @@ form label i {
     padding: 0px 0px 2px 0px
 }
 
+.activite-cards .card-txt {
+    padding-left: 20px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
