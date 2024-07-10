@@ -12,12 +12,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Liaison Font awesome et la page-->
     <link href="style.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link href="mediaqueries.css" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
         <header>           <!--Entête de la page-->
             <nav>
-                <img class="logo" src="images/Logo/Booki.png" alt="Logo Booki"></a>
+                <img class="logo" src="images/Logo/Booki.png" alt="Logo Booki">
                 <div class="lien">
                     <a class="lien-content" href="#lieux">Hébergements</a>
                     <a class="lien-content" href="#divertissement">Activités</a>
@@ -31,19 +32,19 @@
                     En plein centre-ville ou en pleine nature
                 </p>
             </div>   
-            <section class="search">
+            <div class="search">
                 <div>
                     <form method="get" action=""> <!--Formulaire de recherche-->
                         <p>
                             <label for="ville"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></label>
-                            <input class="zone" type="text" ville="ville" id="ville" value="Marseille, France">
+                            <input class="zone" type="text" name="ville" id="ville" value="Marseille, France">
                             <input class="buttonrechercher" type="submit" value="Rechercher">
                             <span class="buttonglass"><i class="fa-solid fa-magnifying-glass"></i></span>
                         </p>
                     </form>
                 </div>
-            </section>
-            <section>
+            </div>
+            <div>
                 <div class="filtre">   <!--Partie filtre-->
                     <p>Filtres</p>
                     <div class="button-filtre">
@@ -57,8 +58,7 @@
                     <span class="info"><i class="fa-solid fa-info"></i></span>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-            </section>
-
+            </div>
             <div class="hebergements-and-populaires">   <!--Hebergement et populaire-->
                 <section id="lieux" class="hebergements">       <!--Partie Hébergements-->
                     <h2 class="title">Hébergements à Marseille</h2>
